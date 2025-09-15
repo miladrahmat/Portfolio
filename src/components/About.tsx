@@ -13,12 +13,15 @@ const About = () => {
 					<div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
 						<div className='sm:text-right text-4xl font-bold'>
 							<p>
-								Hi! I'm Milad Rahmat Abadi
+								Hi, I'm Milad!
 							</p>
 						</div>
 						<div>
 							<p>
-								A software developer.
+								I'm currently studying programming at <a className='inline hover:text-blue-400 underline' href='https://hive.fi'>Hive Helsinki</a>, 
+								where I've greatly developed my problem solving and teamworking skills.<br /><br />
+								Before diving into tech, I worked in customer service and sales, which taught me how to communicate clearly and effectively,
+								adapt quickly and stay focused on solving real world problems
 							</p>
 						</div>
 					</div>

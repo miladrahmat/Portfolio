@@ -5,6 +5,7 @@ import {
 	FaGithub,
 	FaLinkedin,
 } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {
@@ -37,6 +38,11 @@ const Navbar = () => {
 						Projects
 					</Link>
 				</li>
+				<li>
+					<Link to='contact' smooth={true} duration={500} className='cursor-pointer'>
+						Contact
+					</Link>
+				</li>
 			</ul>
 			<div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
 				{!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
@@ -62,6 +68,11 @@ const Navbar = () => {
 						Projects
 					</Link>
 				</li>
+				<li>
+					<Link onClick={handleClick} to='contact' smooth={true} duration={500} className='cursor-pointer'>
+						Contact
+					</Link>
+				</li>
 			</ul>
 			<div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
 				<ul>
@@ -73,6 +84,11 @@ const Navbar = () => {
 					<li className='w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600'>
 						<a href='https://github.com/miladrahmat' className='flex justify-between items-center w-full text-gray-300 px-4'>
 						GitHub <FaGithub size={30} />
+						</a>
+					</li>
+					<li className='w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600'>
+						<a href='mailto:milad.rahmat@gmail.com' className='flex justify-between items-center w-full text-gray-300 px-4'>
+						Email <MdEmail size={30} />
 						</a>
 					</li>
 				</ul>
