@@ -1,3 +1,14 @@
+
+const Skill = ( {text}: {text: string} ) => {
+	return (
+		<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
+			<p className='my-4'>
+				{text}
+			</p>
+		</div>
+	)
+}
+
 const Skills = () => {
 	return (
 		<div id='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
@@ -11,27 +22,15 @@ const Skills = () => {
 					</p>
 				</div>
 				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>C</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>C++</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>JavaScript</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>TypeScript</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>React</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>Git</p>
-					</div>
-					<div className='shadow-md shadow-[#00ffff] hover:scale-110 duration-500'>
-						<p className='my-4'>Bash</p>
-					</div>
+					<Skill text='C' />
+					<Skill text='C++' />
+					<Skill text='JavaScript' />
+					<Skill text='TypeScript' />
+					<Skill text='React' />
+					<Skill text='Git' />
+					<Skill text='Bash' />
+					<Skill text='Markdown' />
+					<Skill text='HTML' />
 				</div>
 			</div>
 		</div>
