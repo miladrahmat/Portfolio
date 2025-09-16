@@ -47,17 +47,17 @@ return (
 		<div id="projects" className="w-full min-h-screen text-gray-300 bg-[#0a192f] flex flex-col justify-center">
 			<div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<div className="pb-8 w-full flex justify-center items-center flex-col">
-					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500">
+					<p className="sm:text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500">
 						Projects
 					</p>
-					<p className="py-6 text-2xl">
+					<p className="py-6 sm:text-2xl">
 						Check out my most recent projects
 					</p>
 				</div>
 				<Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={50} slidesPerView={1} className="w-full">
 					{projects.map((project, idx) => (
 						<SwiperSlide key={idx} className="w-full flex items-center justify-center">
-							<div className="flex flex-col md:flex-row items-center justify-center h-full w-full bg-[#112240] rounded-md shadow-lg shadow-[#00ffff] p-6">
+							<div className="flex flex-col md:flex-row items-center justify-center h-full w-full bg-[#112240] rounded-md p-6">
 								<div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0 md:mr-8">
 									<img src={project.image} alt={project.title} className="object-cover rounded-md max-h-64 w-full md:w-auto" />
 								</div>
