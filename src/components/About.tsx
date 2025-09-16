@@ -16,12 +16,13 @@ const About = () => {
 								Hi, I'm Milad!
 							</p>
 						</div>
-						<div>
+						<div className='sm:text-2xl'>
 							<p>
-								I'm currently studying programming at <a className='inline hover:text-blue-400 underline' href='https://hive.fi'>Hive Helsinki</a>, 
-								where I've greatly developed my problem solving and teamworking skills.<br /><br />
+								I'm currently finishing up my studies at <a className='inline hover:text-blue-400 underline' href='https://hive.fi'>Hive Helsinki</a>, 
+								where I've greatly developed my technical skills and soft skills such as problem solving and teamworking.<br /><br />
 								Before diving into tech, I worked in customer service and sales, which taught me how to communicate clearly and effectively,
-								adapt quickly and stay focused on solving real world problems
+								adapt quickly and stay focused on solving real world problems<br /><br />
+								I enjoy learning new technologies and improving my skills which I can use for creating scalable and efficient solutions.
 							</p>
 						</div>
 					</div>

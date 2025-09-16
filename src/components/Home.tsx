@@ -10,11 +10,11 @@ const Home = () => {
 					<h2 className='text-4xl sm:text-7xl font-bold text-white'>
 						Milad Rahmat Abadi
 					</h2>
-					<p className='text-gray-500 py-4 max-w-md'>
-						Software Developer 
+					<p className='text-white sm:text-3xl py-4 max-w-md'>
+						Aspiring software developer
 					</p>
 					<div>
-						<Link to='about' smooth={true} duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradiant-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+						<Link to='about' smooth={true} duration={500} className='group text-2xl text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradiant-to-r from-cyan-500 to-blue-500 cursor-pointer'>
 							About Me
 							<span className='group-hover:rotate-90 duration-300'>
 								<HiArrowNarrowRight size={25} className='ml-3' />
@@ -23,7 +23,7 @@ const Home = () => {
 					</div>
 				</div>
 				<div>
-					<img src={me} alt='My profile image' className='rounded-full w-190'/* className='rounded-4xl mx-auto w-2/3 md:w-full' */ />
+					<img src={me} alt='My profile image' className='rounded-full mx-auto w-2/3' />
 				</div>
 			</div>
 		</div>
