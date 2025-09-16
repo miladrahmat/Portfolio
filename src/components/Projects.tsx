@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -54,7 +54,7 @@ return (
 						Check out my most recent projects
 					</p>
 				</div>
-				<Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={50} slidesPerView={1} className="w-full">
+				<Swiper modules={[Navigation, Pagination, Keyboard, Mousewheel]} navigation pagination={{ clickable: true }} keyboard={{ enabled: true }} mousewheel={{ forceToAxis: true }} spaceBetween={50} slidesPerView={1} loop={true} className="w-full">
 					{projects.map((project, idx) => (
 						<SwiperSlide key={idx} className="w-full flex items-center justify-center">
 							<div className="flex flex-col md:flex-row items-center justify-center h-full w-full bg-[#112240] rounded-md p-6">
