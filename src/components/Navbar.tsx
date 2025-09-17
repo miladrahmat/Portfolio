@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import {
 	FaBars,
 	FaTimes,
@@ -11,6 +12,14 @@ import { Link } from 'react-scroll'
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleClick = () => setNav(!nav);
+
+	useEffect(() => {
+		if (nav) {
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.style.overflow = ''
+		}
+	}, [nav])
 
 	return (
 		<div className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300 z-100'>
