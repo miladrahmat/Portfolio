@@ -15,7 +15,7 @@ const Navbar = () => {
 	return (
 		<div className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300'>
 			<div>
-				<h1 className='font-thin text-2xl italic font-serif'>Milad Rahmat Abadi</h1>
+				<h1 className='font-thin text-2xl font-serif'>Milad Rahmat Abadi</h1>
 			</div>
 			<ul className='hidden md:flex gap-x-8'>
 				<li>
@@ -53,22 +53,22 @@ const Navbar = () => {
 						Home
 					</Link>
 				</li>
-				<li>
+				<li className='py-6 text-4xl'>
 					<Link onClick={handleClick} to='about' smooth={true} duration={500} className='cursor-pointer'>
 						About me
 					</Link>
 				</li>
-				<li>
+				<li className='py-6 text-4xl'>
 					<Link onClick={handleClick} to='skills' smooth={true} duration={500} className='cursor-pointer'>
 						Skills
 					</Link>
 				</li>
-				<li>
+				<li className='py-6 text-4xl'>
 					<Link onClick={handleClick} to='projects' smooth={true} duration={500} className='cursor-pointer'>
 						Projects
 					</Link>
 				</li>
-				<li>
+				<li className='py-6 text-4xl'>
 					<Link onClick={handleClick} to='contact' smooth={true} duration={500} className='cursor-pointer'>
 						Contact
 					</Link>
