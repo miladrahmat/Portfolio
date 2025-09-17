@@ -13,7 +13,7 @@ const Navbar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300'>
+		<div className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300 z-100'>
 			<div>
 				<h1 className='font-thin text-2xl font-serif'>Milad Rahmat Abadi</h1>
 			</div>
@@ -47,7 +47,7 @@ const Navbar = () => {
 			<div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
 				{!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
 			</div>
-			<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex-col justify-center items-center'}>
+			<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
 				<li className='py-6 text-4xl'>
 					<Link onClick={handleClick} to='home' smooth={true} duration={500} className='cursor-pointer'>
 						Home
