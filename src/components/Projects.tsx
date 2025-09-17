@@ -43,7 +43,7 @@ return (
 		<div id='projects' className='w-full min-h-screen text-gray-300 bg-[#0a192f] flex flex-col justify-center'>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className='pb-8 w-full flex justify-center items-center flex-col'>
-					<p className='sm:text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
+					<p className='text-2xl sm:text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
 						Projects
 					</p>
 					<p className='py-6 sm:text-2xl'>
