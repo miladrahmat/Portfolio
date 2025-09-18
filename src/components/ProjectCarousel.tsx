@@ -24,13 +24,13 @@ const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 				<SwiperSlide key={idx} className='w-full flex items-center justify-center'>
 					<div className='flex flex-col md:flex-row items-center justify-center h-full w-full bg-[#112240] rounded-md p-6'>
 						<div className='w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0 md:mr-8'>
-							<img src={project.image} alt={project.title} className='object-cover rounded-md max-h-64 w-full md:w-auto' />
+							<img src={project.image} alt={`Image of ${project.title}`} className='object-cover rounded-md max-h-64 w-full md:w-auto' />
 						</div>
 						<div className='w-full md:w-1/2 flex flex-col justify-center items-start'>
 							<span className='text-2xl font-bold text-white tracking-wider mb-4'>
 								{project.title}
 							</span>
-							<p className='text-lg text-left mb-6'>
+							<p aria-label='Description' className='text-lg text-left mb-6'>
 								{project.description}
 							</p>
 							<a href={project.link}>

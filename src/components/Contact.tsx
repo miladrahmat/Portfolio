@@ -19,13 +19,13 @@ const Contact = () => {
 					</p>
 				</div>
 				<div className='grid grid-cols-3 gap-4'>
-					<button onClick={() => window.open("https://github.com/miladrahmat")} className='text-white bg-gradient-to-r from-black-500 to-gray-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 cursor-pointer'>
+					<button onClick={() => window.open("https://github.com/miladrahmat")} className='text-white bg-gradient-to-r from-black-500 to-gray-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 cursor-pointer' aria-label='GitHub'>
 						<FaGithub size={100} />
 					</button>
-					<button onClick={() => window.open("https://www.linkedin.com/in/miladrahmat/")} className='text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 cursor-pointer'>
+					<button onClick={() => window.open("https://www.linkedin.com/in/miladrahmat/")} className='text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 cursor-pointer' aria-label='LinkedIn'>
 						<FaLinkedin size={100} />
 					</button>
-					<button onClick={() => window.open("mailto:milad.rahmat@gmail.com")} className='text-white bg-gradient-to-r from-red-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 text-center cursor-pointer'>
+					<button onClick={() => window.open("mailto:milad.rahmat@gmail.com")} className='text-white bg-gradient-to-r from-red-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg sm:px-5 py-2.5 text-center cursor-pointer' aria-label='Email'>
 						<MdEmail size={100} />
 					</button>
 				</div>
