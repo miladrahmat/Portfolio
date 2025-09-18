@@ -32,10 +32,10 @@ const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 							</span>
 							<p className='text-lg text-left mb-6'>
 								{project.description}
-								</p>
+							</p>
 							<a href={project.link}>
 								<button className='rounded-lg px-6 py-3 bg-cyan-400 text-gray-900 font-bold text-lg shadow hover:bg-cyan-300 transition-colors'>
-								View Project
+									View Project
 								</button>
 							</a>
 						</div>
