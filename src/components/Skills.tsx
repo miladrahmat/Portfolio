@@ -11,7 +11,7 @@ const Skill = ( {text}: {text: string} ) => {
 
 const Skills = () => {
 	return (
-		<div aria-label='Skills' id='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+		<div role='Skills' id='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className='w-full flex justify-center items-center flex-col mb-7'>
 					<h2 className='text-2xl sm:text-4xl font-bold inline border-b-4 border-cyan-500 text-center'>
