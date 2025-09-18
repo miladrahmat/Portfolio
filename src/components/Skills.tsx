@@ -2,7 +2,7 @@
 const Skill = ( {text}: {text: string} ) => {
 	return (
 		<div className='shadow-md shadow-[#00ffff]'>
-			<p className='my-4'>
+			<p className='font-bold text-2xl my-4'>
 				{text}
 			</p>
 		</div>
