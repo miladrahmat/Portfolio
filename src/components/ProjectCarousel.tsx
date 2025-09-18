@@ -33,7 +33,7 @@ const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 							<p aria-label='Description' className='text-lg text-left mb-6'>
 								{project.description}
 							</p>
-							<a href={project.link}>
+							<a href={project.link} target='_blank' rel='noopener noreferrer'>
 								<button className='rounded-lg px-6 py-3 bg-cyan-400 text-gray-900 font-bold text-lg shadow hover:bg-cyan-300 transition-colors'>
 									View Project
 								</button>

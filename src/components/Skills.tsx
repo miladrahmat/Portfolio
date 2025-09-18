@@ -2,9 +2,9 @@
 const Skill = ( {text}: {text: string} ) => {
 	return (
 		<div className='shadow-md shadow-[#00ffff]'>
-			<p className='font-bold text-2xl my-4'>
+			<h4 className='font-bold text-2xl my-4'>
 				{text}
-			</p>
+			</h4>
 		</div>
 	)
 }

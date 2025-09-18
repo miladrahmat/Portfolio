@@ -16,8 +16,8 @@ const About = () => {
 						</div>
 						<div className='sm:text-2xl'>
 							<p aria-label='Introduction'>
-								I'm currently finishing up my studies at <a className='inline hover:text-blue-400 underline' href='https://www.hive.fi'>Hive Helsinki</a>, 
-								where I've greatly developed my technical skills and soft skills such as problem solving and teamworking.<br /><br />
+								I'm currently finishing up my studies at <a className='inline hover:text-blue-400 underline' href='https://www.hive.fi' target='_blank' rel='noopener noreferrer'>
+								Hive Helsinki</a>, where I've greatly developed my technical skills and soft skills such as problem solving and teamworking.<br /><br />
 								Before diving into tech, I worked in customer service and sales, which taught me how to communicate clearly and effectively,
 								adapt quickly and stay focused on solving real world problems.<br /><br />
 								I enjoy learning new technologies and improving my skills which I can use for creating scalable and efficient solutions.

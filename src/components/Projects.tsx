@@ -28,7 +28,7 @@ const projects = [
 		image: philo,
 		title: 'The dining philosophers problem simulator',
 		description: 'A text-based simulator for the dining philosophers problem',
-		link: 'https://github.com/miladrahmat/Minishell',
+		link: 'https://github.com/miladrahmat/Philosophers',
 	},
 	{
 		image: Fdf,
