@@ -15,7 +15,7 @@
 
 This project is a Portfolio website to showcase projects and skills. The portfolio serves as a central hub where recruiters and collaborators can learn more about my background and view my work.
 
-For this project I used **TypeScript** and **React** and got to learn how to program and deploy a frontend website using [Vercel.](https://vercel.com/)
+For this project I used **TypeScript**, **React** and **Tailwind CSS** and got to learn how to program a frontend website and deploy using [Vercel.](https://vercel.com/)
 
 You can visit the page [here](https://miladrahmat.com/)!
 
@@ -24,7 +24,7 @@ You can visit the page [here](https://miladrahmat.com/)!
 - Responsive design for desktop and mobile users
 - Interactive project showcase with descriptions
 - Implemented with **TypeScript** for safety and maintainability
-- Modern React-based UI
+- Modern React-based UI styled with **Tailwind CSS**
 
 ### Accessibility
 The website is designed with accessibility in mind:
@@ -56,3 +56,4 @@ Open your browser and navigate to:
 ```
 http://localhost:5173
 ```
+
