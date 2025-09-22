@@ -5,8 +5,15 @@ import irc from '../assets/irc.gif'
 import minish from '../assets/minishell.gif'
 import philo from '../assets/philo.gif'
 import portfolio from '../assets/Porfolio.png'
+import inception from '../assets/Inception.png'
 
 const projects = [
+	{
+		image: inception,
+		title: 'Multi-Container WordPress Deployment',
+		description: 'A containerized WordPress blog platform with Nginx and MariaDB, orchestrated using Docker Compose',
+		link: 'https://github.com/miladrahmat/Inception',
+	},
 	{
 		image: irc,
 		title: 'Custom IRC server',
