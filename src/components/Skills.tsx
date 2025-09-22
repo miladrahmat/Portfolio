@@ -31,6 +31,9 @@ const Skills = () => {
 					<Skill text='Bash' />
 					<Skill text='Markdown' />
 					<Skill text='HTML' />
+					<Skill text='Tailwind CSS' />
+					<Skill text='Docker' />
+					<Skill text='SQL' />
 				</div>
 			</div>
 		</div>
