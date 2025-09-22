@@ -6,6 +6,7 @@ import minish from '../assets/minishell.gif'
 import philo from '../assets/philo.gif'
 import portfolio from '../assets/Porfolio.png'
 import inception from '../assets/Inception.png'
+import push_swap from '../assets/push_swap.gif'
 
 const projects = [
 	{
@@ -50,7 +51,13 @@ const projects = [
 		description: 'Wireframe renderer written in C, that converts a 2D map into a 3D representation',
 		link: 'https://github.com/miladrahmat/Fdf',
 	},
-];
+	{
+		image: push_swap,
+		title: 'Number sorting algorithm',
+		description: 'A C program that sorts integers from input arguments',
+		link: 'https://github.com/miladrahmat/push_swap',
+	},
+]
 
 const Projects = () => {
 return (
