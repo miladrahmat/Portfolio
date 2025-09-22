@@ -4,6 +4,7 @@ import cub3d from '../assets/cub3d.gif'
 import irc from '../assets/irc.gif'
 import minish from '../assets/minishell.gif'
 import philo from '../assets/philo.gif'
+import portfolio from '../assets/Porfolio.png'
 
 const projects = [
 	{
@@ -11,6 +12,12 @@ const projects = [
 		title: 'Custom IRC server',
 		description: 'An Internet Relay Chat (IRC) server written in C++',
 		link: 'https://github.com/miladrahmat/ft_irc',
+	},
+	{
+		image: portfolio,
+		title: 'Portfolio',
+		description: 'Personal portfolio page implemented in TypeScript, React and Tailwind CSS',
+		link: 'https://github.com/miladrahmat/Portfolio',
 	},
 	{
 		image: cub3d,
