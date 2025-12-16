@@ -1,23 +1,19 @@
 
-import React from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules'
+import { projects } from './Projects'
 import 'swiper/css';
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-interface Project {
-	image: string
-	title: string
-	description: string
-	link: string
-}
+const ProjectCarousel = () => {
+	const [initialIndex] = useState(() => {
+		const saved = sessionStorage.getItem('swiperProjectIndex')
+		return saved ? parseInt(saved, 10) : 0
+	})
 
-interface ProjectsCarouselProps {
-	projects: Project[]
-}
-
-const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 	return (
 		<Swiper 
 			modules={[Navigation, Pagination, Keyboard, Mousewheel]}
@@ -27,6 +23,10 @@ const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 			mousewheel={{ forceToAxis: true }}
 			spaceBetween={10}
 			slidesPerView={1}
+			initialSlide={initialIndex}
+			onSlideChange={(swiper) => {
+				sessionStorage.setItem('swiperProjectIndex', swiper.realIndex.toString())
+			}}
 			breakpoints={{
 				640: {
 					slidesPerView: 2,
@@ -49,15 +49,22 @@ const ProjectCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
 							<div className='w-full justify-center items-center h-1/2 overflow-hidden'>
 								<img src={project.image} alt={`Image of ${project.title}`} className='object-cover rounded-md max-h-64 w-full md:w-auto' />
 							</div>
+							<div className='w-full flex flex-row justify-start items-start'>
+								{project.stack.map((tech, index) => (
+									<p key={index} className='border-1 m-0.5 p-1.5 rounded-2xl border-cyan-400 text-cyan-400 text-xs'>
+										{tech}
+									</p>
+								))}
+							</div>
 							<div className='w-full flex flex-col justify-center items-center p-6 gap-4'>
 								<span className='text-xl font-bold text-white tracking-wider text-center'>
 									{project.title}
 								</span>
-								<a href={project.link} target='_blank' rel='noopener noreferrer'>
-									<button className={`rounded-lg px-6 py-2 bg-cyan-400 text-gray-900 font-bold text-base shadow hover:bg-cyan-300 transition-colors`}>
+								<Link to={`/projects/${project.id}`}>
+									<button className={`rounded-lg px-6 py-2 bg-cyan-400 text-gray-900 font-bold text-base hover:bg-cyan-300 transition-colors`}>
 										Learn more
 									</button>
-								</a>
+								</Link>
 							</div>
 						</div>
 					)}
