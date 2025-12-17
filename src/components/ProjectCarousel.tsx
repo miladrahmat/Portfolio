@@ -3,10 +3,19 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules'
-import { projects } from './Projects'
+import { projects } from '../projects.json'
 import 'swiper/css';
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+
+interface IProject {
+	id: string
+	image: string
+	title: string
+	description: string[]
+	stack: string[]
+	link: string
+}
 
 const ProjectCarousel = () => {
 	const [initialIndex] = useState(() => {
@@ -39,7 +48,7 @@ const ProjectCarousel = () => {
 			centeredSlides={true}
 			className='w-full h-full'
 		>
-			{projects.map((project, idx) => (
+			{projects.map((project: IProject, idx: number) => (
 				<SwiperSlide key={idx} className='w-full h-full justify-center'>
 					{ ({isActive}) => (
 						<div
