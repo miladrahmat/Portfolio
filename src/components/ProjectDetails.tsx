@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { projects } from '../projects.json'
+import { projects } from '../projects/projects.json'
+import ReactMarkdown from 'react-markdown'
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -9,7 +11,13 @@ const ProjectDetails = () => {
 
   if (!project) return <div>404 Not Found</div>;
 
-  const techStack = project.stack.join(", ")
+  const [content, setContent] = useState<string>("");
+
+  useEffect(() => {
+    fetch(project.description)
+      .then((res) => res.text())
+      .then((text) => setContent(text));
+  }, []);
 
   return (
     <div role='Project Details Page' className='w-full min-h-screen bg-[#0a192f] text-white flex flex-col items-center p-10'>
@@ -20,14 +28,13 @@ const ProjectDetails = () => {
         {project.title}
       </h1>
       <img src={project.image} alt={`Image of ${project.title}`} className='w-full max-w-2xl rounded-lg my-10 mb-8' />
-      <p className='py-6 sm:text-2xl'>
-        Technologies used: {techStack}
-      </p>
-      {project.description.map((p, index) => (
-        <p key={index} aria-label='Project description paragraph' className='max-w-2xl text-lg text-gray-300 mb-8 whitespace-pre-wrap'>
-          {p}
-        </p>
-      ))}
+      <div className='prose prose-invert lg:prose-xl p-6'>
+        <ReactMarkdown aria-label='Project description paragraph' components={{ a: ({ node, ...props }) => (
+          <a {...props} target='_blank' rel='noopener noreferrer' className='inline hover:text-blue-400 underline' />
+        ) }}>
+          {content}
+        </ReactMarkdown>
+      </div>
       <a href={project.link} target='_blank' rel='noopener noreferrer' aria-label='Github project link' className='rounded-lg px-8 py-3 bg-cyan-400 text-gray-900 font-bold text-lg hover:bg-cyan-300 transition-colors'>
         View Code on GitHub
       </a>
