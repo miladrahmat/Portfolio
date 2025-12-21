@@ -2,72 +2,72 @@
   "projects": [
     {
       "id": "inception",
-      "image": "../assets/Inception.png",
+      "image": "/src/assets/Inception.png",
       "title": "Multi-Container WordPress Deployment",
-      "description": "../projects/inception.md",
+      "description": "/src/projects/inception.md",
       "stack": [ "Docker", "Docker Compose", "SQL", "Nginx" ],
       "link": "https://github.com/miladrahmat/Inception"
     },
 
     {
       "id": "irc",
-      "image": "../assets/irc.gif",
+      "image": "/src/assets/irc.gif",
       "title": "Custom IRC server",
-      "description": "../projects/irc.md",
+      "description": "/src/projects/irc.md",
       "stack": [ "C++" ],
       "link": "https://github.com/miladrahmat/ft_irc"
     },
 
     {
       "id": "portfolio",
-      "image": "../assets/Portfolio.png",
+      "image": "/src/assets/Portfolio.png",
       "title": "Portfolio",
-      "description": "../projects/portfolio.md",
+      "description": "/src/projects/portfolio.md",
       "stack": [ "TypeScript", "React", "Tailwind CSS" ],
       "link": "https://github.com/miladrahmat/Portfolio"
     },
 
     {
       "id": "cub3d",
-      "image": "../assets/cub3d.gif",
+      "image": "/src/assets/cub3d.gif",
       "title": "Raycasting game",
-      "description": "../projects/cub3d.md",
+      "description": "/src/projects/cub3d.md",
       "stack": [ "C", "Computer Graphics" ],
       "link": "https://github.com/miladrahmat/cub3d"
     },
 
     {
       "id": "minishell",
-      "image": "../assets/minishell.gif",
+      "image": "/src/assets/minishell.gif",
       "title": "UNIX shell",
-      "description": "../projects/minishell.md",
+      "description": "/src/projects/minishell.md",
       "stack": [ "C", "UNIX" ],
       "link": "https://github.com/miladrahmat/Minishell"
     },
 
     {
       "id": "philosophers",
-      "image": "../assets/philo.gif",
+      "image": "/src/assets/philo.gif",
       "title": "The dining philosophers problem simulator",
-      "description": "../projects/philo.md",
+      "description": "/src/projects/philo.md",
       "stack": [ "C" ],
       "link": "https://github.com/miladrahmat/Philosophers"
     },
 
     {
       "id": "fdf",
-      "image": "../assets/fdf.gif",
+      "image": "/src/assets/fdf.gif",
       "title": "3D Map Visualizer",
-      "description": "../projects/fdf.md",
+      "description": "/src/projects/fdf.md",
       "stack": [ "C", "Computer Graphics" ],
       "link": "https://github.com/miladrahmat/Fdf"
     },
 
     {
       "id": "push-swap",
-      "image": "../assets/push_swap.gif",
+      "image": "/src/assets/push_swap.gif",
       "title": "Number sorting algorithm",
-      "description": "../projects/push_swap.md",
+      "description": "/src/projects/push_swap.md",
       "stack": [ "C" ],
       "link": "https://github.com/miladrahmat/push_swap"
     }
