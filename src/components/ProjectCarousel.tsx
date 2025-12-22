@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules'
-import { projects } from '../projects/projects.json'
+import { projects } from '../projects.json'
 import 'swiper/css';
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'

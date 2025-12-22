@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { projects } from '../projects/projects.json'
+import { projects } from '../projects.json'
 import ReactMarkdown from 'react-markdown'
 
 const ProjectDetails = () => {

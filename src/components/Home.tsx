@@ -1,5 +1,5 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import me from '../assets/MiladRahmat.jpg'
+import me from '/images/MiladRahmat.jpg'
 import { Link } from 'react-scroll'
 
 const Home = () => {
