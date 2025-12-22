@@ -22,7 +22,7 @@ const Navbar = () => {
 	}, [nav])
 
 	return (
-		<div className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300 z-100'>
+		<nav className='fixed w-full h-20 flex justify-between items-center px-4 bg-slate-900 text-gray-300 z-100'>
 			<div>
 				<h1 className='text-2xl'>Milad Rahmat Abadi</h1>
 			</div>
@@ -102,7 +102,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

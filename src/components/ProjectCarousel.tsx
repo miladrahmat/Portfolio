@@ -69,7 +69,7 @@ const ProjectCarousel = () => {
 								<span className='text-xl font-bold text-white tracking-wider text-center'>
 									{project.title}
 								</span>
-								<Link to={`/projects/${project.id}`}>
+								<Link to={`/projects/${project.id}`} aria-label={`Read more about ${project.title}`}>
 									<button className={`rounded-lg px-6 py-2 bg-cyan-400 text-gray-900 font-bold text-base hover:bg-cyan-300 transition-colors`}>
 										Learn more
 									</button>

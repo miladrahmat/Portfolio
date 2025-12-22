@@ -1,11 +1,11 @@
 
 const Skill = ( {text}: {text: string} ) => {
 	return (
-		<div className='shadow-md shadow-[#00ffff]'>
-			<h4 className='font-bold text-2xl my-4'>
+		<li className='shadow-md shadow-[#00ffff]'>
+			<p className='font-bold text-2xl my-4'>
 				{text}
-			</h4>
-		</div>
+			</p>
+		</li>
 	)
 }
 
@@ -21,7 +21,7 @@ const Skills = () => {
 						I enjoy diving into and learning new things. Here's a list of technologies I've worked with
 					</h3>
 				</div>
-				<div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
+				<ul className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
 					<Skill text='C' />
 					<Skill text='C++' />
 					<Skill text='JavaScript' />
@@ -34,7 +34,7 @@ const Skills = () => {
 					<Skill text='Tailwind CSS' />
 					<Skill text='Docker' />
 					<Skill text='SQL' />
-				</div>
+				</ul>
 			</div>
 		</div>
 	)
