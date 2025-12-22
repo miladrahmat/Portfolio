@@ -17,7 +17,7 @@ const ProjectDetails = () => {
     fetch(project.description)
       .then((res) => res.text())
       .then((text) => setContent(text));
-  }, []);
+  }, [project.description]);
 
   return (
     <div role='Project Details Page' className='w-full min-h-screen bg-[#0a192f] text-white flex flex-col items-center p-10'>

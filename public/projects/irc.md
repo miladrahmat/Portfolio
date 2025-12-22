@@ -10,14 +10,14 @@ An Internet Relay Chat or IRC is a text-based communication protocol on the inte
 
 ### What I did
 
-This project was built in a team of 3 people, where we all took responsibility of implementing cerain features for the project.
+This project was built in a team of 3 people, where we all took responsibility of implementing certain features for the project.
 
 The features I implemented were:
 - **Command parsing**
 - **Multiple clients** support (**TCP Sockets**)
 - **Nickname change** support
 - **Private messages** between users
-- **Authentication** vie password
+- **Authentication** via password
 
 The features my teammates implemented were:
 - **Channels** with **topic** management
@@ -30,4 +30,4 @@ The features my teammates implemented were:
 
 ### What I learned
 
-Since this project was implemented in **C++**, I learned to build a server using **OOP** (Object Oriented Programming), all while streghtening my **teamwoking** and **time management** skills.
+Since this project was implemented in **C++**, I learned to build a server using **OOP** (Object Oriented Programming), all while stregthening my **teamwoking** and **time management** skills.

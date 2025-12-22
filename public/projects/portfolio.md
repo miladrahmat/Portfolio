@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project is a **personal portfolio website** to showcase projects and skills. The website is built to be **responsive** and interactive with **accessability** in mind
+This project is a **personal portfolio website** to showcase projects and skills. The website is built to be **responsive** and interactive with **accessibility** in mind
 
 ### What I learned
 
