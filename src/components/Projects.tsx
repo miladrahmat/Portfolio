@@ -1,63 +1,4 @@
 import ProjectCarousel from './ProjectCarousel'
-import Fdf from '../assets/fdf.gif'
-import cub3d from '../assets/cub3d.gif'
-import irc from '../assets/irc.gif'
-import minish from '../assets/minishell.gif'
-import philo from '../assets/philo.gif'
-import portfolio from '../assets/Porfolio.png'
-import inception from '../assets/Inception.png'
-import push_swap from '../assets/push_swap.gif'
-
-const projects = [
-	{
-		image: inception,
-		title: 'Multi-Container WordPress Deployment',
-		description: 'A containerized WordPress blog platform with Nginx and MariaDB, orchestrated using Docker Compose',
-		link: 'https://github.com/miladrahmat/Inception',
-	},
-	{
-		image: irc,
-		title: 'Custom IRC server',
-		description: 'An Internet Relay Chat (IRC) server written in C++',
-		link: 'https://github.com/miladrahmat/ft_irc',
-	},
-	{
-		image: portfolio,
-		title: 'Portfolio',
-		description: 'Personal portfolio page implemented in TypeScript, React and Tailwind CSS',
-		link: 'https://github.com/miladrahmat/Portfolio',
-	},
-	{
-		image: cub3d,
-		title: 'Raycasting game',
-		description: 'Raycasting-based game written in C, inspired by the world-famous Wolfenstein3D',
-		link: 'https://github.com/miladrahmat/cub3d',
-	},
-	{
-		image: minish,
-		title: 'UNIX shell',
-		description: 'A small UNIX shell written in C, that imitates the behavior of bash',
-		link: 'https://github.com/miladrahmat/Minishell',
-	},
-	{
-		image: philo,
-		title: 'The dining philosophers problem simulator',
-		description: 'A text-based simulator for the dining philosophers problem',
-		link: 'https://github.com/miladrahmat/Philosophers',
-	},
-	{
-		image: Fdf,
-		title: '3D Map Visualizer',
-		description: 'Wireframe renderer written in C, that converts a 2D map into a 3D representation',
-		link: 'https://github.com/miladrahmat/Fdf',
-	},
-	{
-		image: push_swap,
-		title: 'Number sorting algorithm',
-		description: 'A C program that sorts integers from input arguments',
-		link: 'https://github.com/miladrahmat/push_swap',
-	},
-]
 
 const Projects = () => {
 return (
@@ -71,7 +12,7 @@ return (
 						Check out my most recent projects
 					</h3>
 				</div>
-				<ProjectCarousel projects={projects} />
+				<ProjectCarousel />
 			</div>
 		</div>
 	);

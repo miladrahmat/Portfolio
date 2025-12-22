@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "id": "inception",
+      "image": "/images/Inception.png",
+      "title": "Multi-Container WordPress Deployment",
+      "description": "/projects/inception.md",
+      "stack": [ "Docker", "Docker Compose", "SQL", "Nginx" ],
+      "link": "https://github.com/miladrahmat/Inception"
+    },
+
+    {
+      "id": "irc",
+      "image": "/images/irc.gif",
+      "title": "Custom IRC server",
+      "description": "/projects/irc.md",
+      "stack": [ "C++" ],
+      "link": "https://github.com/miladrahmat/ft_irc"
+    },
+
+    {
+      "id": "portfolio",
+      "image": "/images/Portfolio.png",
+      "title": "Portfolio",
+      "description": "/projects/portfolio.md",
+      "stack": [ "TypeScript", "React", "Tailwind CSS" ],
+      "link": "https://github.com/miladrahmat/Portfolio"
+    },
+
+    {
+      "id": "cub3d",
+      "image": "/images/cub3d.gif",
+      "title": "Raycasting game",
+      "description": "/projects/cub3d.md",
+      "stack": [ "C", "Computer Graphics" ],
+      "link": "https://github.com/miladrahmat/cub3d"
+    },
+
+    {
+      "id": "minishell",
+      "image": "/images/minishell.gif",
+      "title": "UNIX shell",
+      "description": "/projects/minishell.md",
+      "stack": [ "C", "UNIX" ],
+      "link": "https://github.com/miladrahmat/Minishell"
+    },
+
+    {
+      "id": "philosophers",
+      "image": "/images/philo.gif",
+      "title": "The dining philosophers problem simulator",
+      "description": "/projects/philo.md",
+      "stack": [ "C" ],
+      "link": "https://github.com/miladrahmat/Philosophers"
+    },
+
+    {
+      "id": "fdf",
+      "image": "/images/fdf.gif",
+      "title": "3D Map Visualizer",
+      "description": "/projects/fdf.md",
+      "stack": [ "C", "Computer Graphics" ],
+      "link": "https://github.com/miladrahmat/Fdf"
+    },
+
+    {
+      "id": "push-swap",
+      "image": "/images/push_swap.gif",
+      "title": "Number sorting algorithm",
+      "description": "/projects/push_swap.md",
+      "stack": [ "C" ],
+      "link": "https://github.com/miladrahmat/push_swap"
+    }
+  ]
+}

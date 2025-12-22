@@ -1,10 +1,10 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import me from '../assets/MiladRahmat.jpg'
+import me from '/images/MiladRahmat.jpg'
 import { Link } from 'react-scroll'
 
 const Home = () => {
 	return (
-		<div role='Home' id='home' className='h-screen w-full bg-[#0a192f]'>
+		<main role='Home' id='home' className='h-screen w-full bg-[#0a192f]'>
 			<div className='max-w-screen-lg mx-auto flex flex-row items-center justify-center h-full px-4 md:flex-row'>
 				<div className='flex flex-col justify-center w-full h-full'>
 					<h1 className='text-2xl sm:text-7xl font-bold text-white'>
@@ -26,7 +26,7 @@ const Home = () => {
 					<img src={me} alt='Profile picture' className='rounded-full mx-auto w-2/3' />
 				</div>
 			</div>
-		</div>
+		</main>
 	)
 }
 

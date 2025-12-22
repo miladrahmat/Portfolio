@@ -1,22 +1,26 @@
+import HomePage from './components/HomePage'
+import ProjectDetails from './components/ProjectDetails'
+import NotFound from './components/NotFound'
 import './style.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+    errorElement: <NotFound />
+  },
+  {
+    path: '/projects/:id',
+    element: <ProjectDetails />,
+    errorElement: <NotFound />
+  }
+])
 
 function App() {
 
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
