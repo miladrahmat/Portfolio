@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { projects } from '../projects.json'
 import ReactMarkdown from 'react-markdown'
+import NotFound from './NotFound'
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -9,7 +10,7 @@ const ProjectDetails = () => {
 
   const project = projects.find(p => p.id === id);
 
-  if (!project) return <div>404 Not Found</div>;
+  if (!project) return <NotFound />;
 
   const [content, setContent] = useState<string>("");
 
